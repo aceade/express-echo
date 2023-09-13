@@ -7,7 +7,15 @@ const port = 3000;
 app.use(express.json());
 
 // echo back to the user
+app.get("/*", (req, res) => {
+    res.send(req.body);
+});
+
 app.post("/*", (req, res) => {
+    res.send(req.body);
+});
+
+app.put("/*", (req, res) => {
     res.send(req.body);
 });
 
