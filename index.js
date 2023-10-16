@@ -1,10 +1,14 @@
 
 const express = require('express');
+const cors = require("cors");
 const app = express();
 const port = 8080;
 
 // need the JSON middleware
 app.use(express.json());
+
+// by default, it allows from all origins
+app.use(cors());
 
 // echo back to the user
 app.get("/*", (req, res) => {
