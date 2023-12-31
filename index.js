@@ -23,6 +23,10 @@ app.put("/*", (req, res) => {
     res.send(req.body);
 });
 
+app.delete("/*", (req, res) => {
+    res.send(req.body);
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 });
