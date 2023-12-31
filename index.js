@@ -16,11 +16,15 @@ app.get("/*", (req, res) => {
 });
 
 app.post("/*", (req, res) => {
-    res.send(req.body);
+    res.status(201).send(req.body);
 });
 
 app.put("/*", (req, res) => {
-    res.send(req.body);
+    res.status(202).send(req.body);
+});
+
+app.delete("/*", (req, res) => {
+    res.status(202).send(req.body);
 });
 
 app.listen(port, () => {
