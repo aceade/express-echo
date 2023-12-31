@@ -8,24 +8,27 @@ Each endpoint takes a wildcard path. Each simply returns the JSON that it receiv
 
 - **URL**: `GET https://aceade-express-echo.azurewebsites.net/*`
 - **Body**: arbitary JSON
-- **Response on OK**: arbitrary JSON (as sent)
+- **Response body**: arbitrary JSON (as sent)
 
 ### Mock POST
 
 - **URL**: `POST https://aceade-express-echo.azurewebsites.net/*`
 - **Body**: arbitary JSON
-- **Response on OK**: arbitrary JSON (as sent)
+- **Response status**: 201 Created
+- **Response body**: arbitrary JSON (as sent)
 
 ### Mock PUT
 
 - **URL**: `PUT https://aceade-express-echo.azurewebsites.net/*`
 - **Body**: arbitary JSON
-- **Response on OK**: arbitrary JSON (as sent)
+- **Response status**: 202 Accepted
+- **Response body**: arbitrary JSON (as sent)
 
 ### Mock DELETE
 
 - **URL**: `DELETE https://aceade-express-echo.azurewebsites.net/*`
 - **Body**: arbitary JSON
+- **Response status**: 202 Accepted
 - **Response on OK**: arbitrary JSON (as sent)
 
 ## Running locally
